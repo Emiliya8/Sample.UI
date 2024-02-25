@@ -1,5 +1,9 @@
 Feature: User should be abe to login to Dice
 
-  Scenario: User should be able to login to Dice
-    Given user
-    When user
+
+
+  Scenario: Login as Emiliya
+    Given user goes to login page
+    When user enters Emiliya username
+    When user enters Emiliya password
+    Then user should see the dashboard
